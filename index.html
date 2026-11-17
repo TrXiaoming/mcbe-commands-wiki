@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>麥塊基岩版指令wiki （Ｖ26.32版）</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23866043'/><rect width='16' height='5' fill='%235d9b2f'/><rect x='3' y='5' width='2' height='2' fill='%235d9b2f'/><rect x='10' y='5' width='3' height='1' fill='%235d9b2f'/></svg>">
+</head>
+<body>
+  <header class="topbar">
+    <button class="menu-btn" id="menuBtn" aria-label="選單">☰</button>
+    <a class="logo" href="#/">
+      <span class="logo-block"></span>
+      <span class="logo-text">麥塊基岩版指令wiki （Ｖ26.32版）<small>基岩版・教育版指令</small></span>
+    </a>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="搜尋指令（例如 give、tp、傳送）…" autocomplete="off">
+      <ul id="suggest" class="suggest"></ul>
+    </div>
+    <button class="theme-btn" id="themeBtn" title="切換深色模式">◐</button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" id="sidebar">
+      <div class="side-section">
+        <h3>導覽</h3>
+        <a href="#/">指令總覽</a>
+        <a href="#/selectors">目標選擇器</a>
+        <a href="#/coordinates">座標表示法</a>
+        <a href="#/gamerules">遊戲規則</a>
+        <a href="#/rawtext">原始 JSON 文字</a>
+        <a href="#/permissions">權限等級</a>
+      </div>
+      <div class="side-section">
+        <h3>全部指令</h3>
+        <div id="sideList" class="side-list"></div>
+      </div>
+    </nav>
+
+    <main class="content" id="content"></main>
+  </div>
+
+  <footer class="footer">
+    資料整理對應 <b>基岩版 / 教育版 <span id="ver"></span></b>。本站為非官方整理，風格參考 minecraft.wiki。Minecraft 為 Mojang Studios 之商標。
+  </footer>
+
+  <div id="toast" class="toast">已複製！</div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
